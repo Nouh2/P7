@@ -1,0 +1,25 @@
+$global_color: #ff6060;
+
+.header {
+  color: $global_color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+  padding-bottom: 164px;
+  padding-top: 25px;
+}
+
+ul {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+a {
+  color: $global_color;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+}
