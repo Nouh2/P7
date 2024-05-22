@@ -1,25 +1,36 @@
-$global_color: #ff6060;
-
 .header {
-  color: $global_color;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 70px;
-  padding-bottom: 164px;
-  padding-top: 25px;
+  width: 95%;
+  margin: auto;
 }
 
-ul {
+img {
+  width: 10rem;
+}
+
+.header_list {
   display: flex;
-  width: 20%;
-  justify-content: space-around;
+  text-decoration: none;
 }
 
-a {
-  color: $global_color;
+.header_list li {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+
+.header_link {
   text-decoration: none;
-  font-size: 25px;
-  font-weight: 500;
+  color: #ff6060;
+  margin: 1rem 0.5rem;
+  padding: 0.2rem 0.7rem;
+  font-weight: bold;
+}
+
+.header_link:hover {
+  text-decoration: underline;
 }

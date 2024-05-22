@@ -1,0 +1,36 @@
+.card_about__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 25px;
+  background-color: #ff6060;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 0.3rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card_about {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card_about button {
+  border: none;
+  background-color: transparent;
+  display: hidden;
+  color: White;
+  width: auto;
+  padding-top: 5px;
+}
+
+.card_about__text {
+  color: #ff6060;
+  padding: 20px 20px 20px 20px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
