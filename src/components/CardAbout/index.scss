@@ -11,7 +11,6 @@
   align-items: center;
   cursor: pointer;
 }
-
 .card_about {
   border-radius: 10px;
   display: flex;
@@ -22,10 +21,10 @@
 .card_about button {
   border: none;
   background-color: transparent;
-  display: hidden;
   color: White;
   width: auto;
   padding-top: 5px;
+  font-size: x-large;
 }
 
 .card_about__text {

@@ -1,12 +1,12 @@
 import React from "react";
 import "../Banner/index.scss";
 
-function Banner(title, img) {
+function Banner(props) {
     return (
      <div className='banner'>
-            <img src={img} alt="" />
+            <img src={props.img} alt="" />
             <div className='bannerfilter'></div>
-            <h1>{title}</h1>
+            <h1>{props.title}</h1>
         </div>
             );
 }
