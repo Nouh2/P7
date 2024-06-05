@@ -1,11 +1,7 @@
 import React from "react";
-
-import Header from "../../components/Header/";
-import Footer from "../../components/Footer/";
-import Main from "../../components/Main";
 import Banner from "../../components/Banner/";
 import ImgBanner from "../../images/Section1.jpg";
-import Card_About from "../../components/CardAbout";
+import CardAbout from "../../components/CardAbout";
 
 export default function About(){
 
@@ -17,18 +13,13 @@ export default function About(){
 
     return (
         <div>
-            <Header />
-            <Main>
             <Banner img={ImgBanner} />
             <div className="about">
-                <Card_About title="Fiabilité" >{fiabilite}</Card_About>
-                <Card_About title="Respect" >{respect}</Card_About>
-                <Card_About title="Service" >{service}</Card_About>
-                <Card_About title="Sécurité" >{securite}</Card_About>
-            </div>
-            </Main>
-            <Footer />
-            
+                <CardAbout title="Fiabilité" >{fiabilite}</CardAbout>
+                <CardAbout title="Respect" >{respect}</CardAbout>
+                <CardAbout title="Service" >{service}</CardAbout>
+                <CardAbout title="Sécurité" >{securite}</CardAbout>
+            </div>       
         </div>
     );
 }
