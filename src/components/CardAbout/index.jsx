@@ -10,9 +10,9 @@ export default function Card_About(props) {
     }
     return (
         <div className="card_about">
-            <header className="card_about__header">
+            <header className="card_about__header"  onClick={handleClick}>
                 <h2>{props.title}</h2>
-                <button onClick={handleClick}>
+                <button>
                     <img className={isOpen ? 'vector': 'vector'} src={vector}/>
                 </button>
             </header>

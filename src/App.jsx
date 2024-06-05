@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, BrowserRouter as Router } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 
 
 import Home from "./pages/Home";
@@ -10,14 +10,13 @@ import Logements from "./pages/Logements";
 
 function App(){
     return (
-        <Router>
-            <Router>
+
+        <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/logements" element={<Logements />} />
                 <Route path="*" element={<ErrorPage />} />
-            </Router>
-        </Router>
+        </Routes>
     )
 }
 
