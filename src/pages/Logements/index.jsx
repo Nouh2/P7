@@ -34,7 +34,6 @@ export default function Logements() {
             <div className="logement_host_name">
                 
             </div>
-            <img src={logementData.cover} alt={logementData.host.name} />
         </div>
     </div>
     </>
