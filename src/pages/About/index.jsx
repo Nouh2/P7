@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../../components/Banner/";
 import ImgBanner from "../../images/Section1.jpg";
-import CardAbout from "../../components/CardAbout";
+import CardAbout from "../../components/Collapse";
 
 export default function About(){
 
