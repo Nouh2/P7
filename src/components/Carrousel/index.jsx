@@ -14,16 +14,23 @@ export default function Carrousel({imageCarrousel}) {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
-            setCurrentIndex(currentIndex + 1) 
-            if(currentIndex === imageCarrousel.length - 1)
+            // const newIndex = currentIndex + 1
+            // setCurrentIndex(
+            //     newIndex !== imageCarrousel.length - 1 ? newIndex : 0
+            // )
+            if (currentIndex === imageCarrousel.length - 1) {
                 setCurrentIndex(0)
+            } else {
+                setCurrentIndex(currentIndex + 1)
+            }
         }
     
 
     const prevSlide = () => {
-        setCurrentIndex(currentIndex - 1) 
-        if(currentIndex === 0)
-            setCurrentIndex(imageCarrousel.length - 1)
+        const newIndex = currentIndex - 1
+        setCurrentIndex(
+            newIndex < 0 ? imageCarrousel.length - 1 : newIndex
+        )
     }
 
     return (
@@ -43,7 +50,7 @@ export default function Carrousel({imageCarrousel}) {
                         onClick={prevSlide}
                     />
                     {/* Affichage du numéro de la diapositive actuelle et le nombre total de diapositives */}
-                    {document.body.clientWidth > 768 && <p className='slideCount'>{currentIndex + 1} / {imageCarrousel.length}</p>}
+                    <p className='slideCount'>{currentIndex + 1} / {imageCarrousel.length}</p>
                 </>
             } 
         </section>

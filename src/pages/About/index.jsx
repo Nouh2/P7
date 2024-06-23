@@ -15,10 +15,10 @@ export default function About(){
         <div>
             <Banner img={ImgBanner} />
             <div className="about">
-                <CardAbout title="Fiabilité" >{fiabilite}</CardAbout>
-                <CardAbout title="Respect" >{respect}</CardAbout>
-                <CardAbout title="Service" >{service}</CardAbout>
-                <CardAbout title="Sécurité" >{securite}</CardAbout>
+                <CardAbout title="Fiabilité" description = {fiabilite}></CardAbout>
+                <CardAbout title="Respect" description = {respect}></CardAbout>
+                <CardAbout title="Service" description = {service}></CardAbout>
+                <CardAbout title="Sécurité" description = {securite}></CardAbout>
             </div>       
         </div>
     );
