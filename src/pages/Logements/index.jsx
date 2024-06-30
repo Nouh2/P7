@@ -4,6 +4,7 @@ import Datas from "../../data/logements.json";
 import "./index.scss";
 import Carrousel from "../../components/Carrousel";
 import CardAbout from "../../components/Collapse";
+import "../../components/Collapse/index.scss";
 import greyStar from "../../images/grey_star.png";
 import redStar from "../../images/red_star.png";
 import ErrorPage from "../ErrorPage";
