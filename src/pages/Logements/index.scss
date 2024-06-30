@@ -1,5 +1,5 @@
-@import "../../utils/mixins.scss";
-@import "../../utils/variables.scss";
+@import "../../assets/mixins.scss";
+@import "../../assets/variables.scss";
 
 .logement {
   &_content {
@@ -74,8 +74,12 @@
       width: 95%;
     }
     &_item {
+      &:lastchild {
+        padding-left: 100px;
+      }
       &1 {
         width: 50%;
+        flex: 1;
       }
       &2 {
         width: 50%;

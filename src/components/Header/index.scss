@@ -34,3 +34,25 @@ img {
 .header_link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .header_link {
+    text-transform: uppercase;
+    padding: 0.2rem 0rem;
+    justify-content: center;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .header_list li {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_logo img {
+    width: 7rem;
+  }
+}

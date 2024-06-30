@@ -4,7 +4,7 @@ import logo from "../../images/LOGO_footer.jpg";
 
 function Footer() {
   return (
-    <footer className='footer'>
+    <footer className="footer">
 		<div>
 			<img src={logo} alt="Kasa" />
 		</div>

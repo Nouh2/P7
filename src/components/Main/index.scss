@@ -1,3 +1,9 @@
 .main {
   margin-bottom: 100px;
+  padding-inline: 65px;
+}
+@media (max-width: 768px) {
+  .main {
+    padding-inline: 20px;
+  }
 }

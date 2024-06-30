@@ -6,6 +6,7 @@ import Carrousel from "../../components/Carrousel";
 import CardAbout from "../../components/Collapse";
 import greyStar from "../../images/grey_star.png";
 import redStar from "../../images/red_star.png";
+import ErrorPage from "../ErrorPage";
 
 
 //recup l'id du logement
@@ -21,6 +22,11 @@ import redStar from "../../images/red_star.png";
 export default function Logements() {
     const {id} = useParams();
     const logementData = Datas.find(data => data.id === id);
+
+	if (!logementData){
+		return <ErrorPage />;
+	}
+
     const name = logementData.host.name.split(' ');
 	const rating = logementData.rating;
 	const description = logementData.description;
@@ -43,7 +49,7 @@ export default function Logements() {
 					</div>
 					<div className="logement_content_host">
 						<div>
-							<div className='logement_content_host_name'>
+							<div className="logement_content_host_name">
 								<span>{name[0]}</span>
 								<span>{name[1]}</span>
 							</div>
@@ -63,10 +69,10 @@ export default function Logements() {
 				<div className="logement_collapse">
 					<div className="logement_collapse_container">
 					<div className="logement_collapse_item1">
-						<CardAbout title={'Description'} description={description} />
+						<CardAbout title={"Description"} description={description} />
 					</div>
 					<div className="logement_collapse_item2">
-						<CardAbout title={'Équipements'} description={equipments} />
+						<CardAbout title={"Équipements"} description={equipments} />
 					</div>
                     </div>
 				</div>             
