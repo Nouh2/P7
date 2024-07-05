@@ -41,3 +41,10 @@
     font-size: clamp(14px, 2vw, 18px);
   }
 }
+
+@media screen and (max-width: 650px) {
+  .carousel {
+    height: 200px;
+    margin: 20px auto;
+  }
+}

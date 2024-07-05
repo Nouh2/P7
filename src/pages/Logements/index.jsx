@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Datas from "../../data/logements.json";
 import "./index.scss";
 import Carrousel from "../../components/Carrousel";
-import CardAbout from "../../components/Collapse";
+import Collapse from "../../components/Collapse";
 import "../../components/Collapse/index.scss";
 import greyStar from "../../images/grey_star.png";
 import redStar from "../../images/red_star.png";
@@ -70,10 +70,10 @@ export default function Logements() {
 				<div className="logement_collapse">
 					<div className="logement_collapse_container">
 					<div className="logement_collapse_item1">
-						<CardAbout title={"Description"} description={description} />
+						<Collapse title={"Description"} description={description} />
 					</div>
 					<div className="logement_collapse_item2">
-						<CardAbout title={"Équipements"} description={equipments} />
+						<Collapse title={"Équipements"} description={equipments} />
 					</div>
                     </div>
 				</div>             

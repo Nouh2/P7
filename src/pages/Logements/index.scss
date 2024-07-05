@@ -7,10 +7,6 @@
     color: $color-secondary;
     width: 95%;
     margin: 0 auto;
-    @media screen and (max-width: 650px) {
-      @include flex(column, space-between, flex-start);
-      gap: 10px;
-    }
     &_infos {
       display: flex;
       flex-direction: column;
@@ -97,6 +93,31 @@
         width: 50%;
         padding-left: 100px;
       }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .logement_content {
+    @include flex(column, space-between, flex-start);
+    gap: 10px;
+    &_host {
+      width: 100%;
+      @include flex(row-reverse, space-between, center);
+    }
+  }
+  .logement_collapse_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .logement_collapse {
+    &_item1 {
+      width: 100%;
+    }
+    &_item2 {
+      width: 100%;
+      padding-left: 0px;
     }
   }
 }

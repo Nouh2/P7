@@ -6,15 +6,6 @@
   cursor: pointer;
   overflow: hidden;
   transition: box-shadow 0.2s ease-in-out;
-  @media screen and (max-width: 1230px) {
-    width: 47%;
-  }
-  @media screen and (max-width: 900px) {
-    width: 100%;
-  }
-  @media screen and (max-width: 500px) {
-    height: 200px;
-  }
   &::after {
     content: "";
     z-index: 10;
@@ -52,5 +43,21 @@
     font-weight: 500;
     font-size: clamp(12px, 3vw, 18px);
     color: #fff;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .gallery_card {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gallery_card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery_card {
+    height: 200px;
   }
 }
