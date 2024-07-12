@@ -1,25 +1,60 @@
-$global-color: #ff6060;
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: $global-color;
+.notFound {
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 411px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ff6060;
 }
 
-h1 {
+.notFound h1 {
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 142.6%;
+  margin: 1rem;
+}
+
+.notFound p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
   margin: 0;
-  font-size: 300px;
 }
 
-p {
-  font-size: 30px;
-  margin: 0;
+.notFound_infos_return {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #ff6060;
 }
 
-.link {
-  margin-top: 100px;
-  font-size: 20px;
-  color: $global-color;
-  text-decoration: underline $global-color;
+@media (max-width: 650px) {
+  .notFound {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .notFound_infos h1 {
+    margin-top: 50px;
+    font-size: 96px;
+    margin-bottom: 0;
+  }
+
+  .notFound_infos p {
+    display: flex;
+    margin-left: 75px;
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .notFound_infos_return {
+    font-size: 10px;
+    text-decoration: underline;
+  }
+  .notFoundFooter {
+    margin-bottom: 248px;
+  }
 }
